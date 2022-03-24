@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Legit</title>
-  <link rel="stylesheet" type="text/css" href="Fake_Twitter//lib/bootstrap-5.1.3-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="Fake_Twitter//style/legit.css">
+  <link rel="stylesheet" type="text/css" href="/lib/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/style/legit.css">
 </head>
 
 <body>
@@ -41,13 +41,13 @@
             Like</button>
         </div>
         <div class="col-lg-6">
-          <img src="Fake_Twitter//ressources/img/d90.jpg" class="gamer-pic" alt="gamer">
+          <img src="/ressources/img/d90.jpg" class="gamer-pic" alt="gamer">
         </div>
       </div>
     </div>
     </div>
   </section>
-  <script src="Fake_Twitter//lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+  <script src="/lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
