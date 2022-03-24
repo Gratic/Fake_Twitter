@@ -1,0 +1,28 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color:white;
+}
+
+h3, h2{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+#title{
+    height:100%;
+    background:  linear-gradient(120deg, #e66465, #9198e5);
+    text-align: left;
+}
+.container {
+    padding: 3% 10% 2%;
+}
+.download-btn{
+    margin: 5% 3% 5% 0%;
+}
+.legit{
+    z-index: 2;
+    opacity: 0.1;
+}
