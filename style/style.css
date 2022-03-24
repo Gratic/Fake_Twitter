@@ -1,16 +1,31 @@
+body{
+    text-align: center;
+    
+}
+
 .legit{
     width: 1000px;
     height: 500px;
     z-index:2;
-    opacity: 0.00001;
+    opacity: 0.1;
     border: none;
 }
 
+h3, h2{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5em;
+}
 .button{
     background-color:black;
     color:white;
     z-index: 0;
-    top: 455px;
-    left: 308px;
+    top: 507px;
+    left: 366px;
     position: absolute;
+}
+.fake-cursor{
+    position: absolute;
+    z-index: 1000;
+
 }

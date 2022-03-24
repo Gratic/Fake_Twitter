@@ -8,6 +8,7 @@ $app->route('home', 'HomeController', 'home');
 $app->route('legit', 'LegitController', 'index');
 $app->route('timeline', 'TimelineController', 'index');
 $app->route('post', 'PostController', 'post');
+$app->route('cursorjacking', 'cursorjackingController', 'cursorjacking');
 
 if(!$connected)
 {
