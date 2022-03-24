@@ -52,6 +52,7 @@ function view($view, $vars_array = null)
 
 function urlr($route){
 
+	global $ROOT_DIR;
 	echo $ROOT_DIR . "/$route";
 
 }
