@@ -50,6 +50,12 @@ function view($view, $vars_array = null)
 	include_once "./view/$view.php";
 }
 
+function urlr($route){
+
+	echo $ROOT_DIR . $route;
+	
+}
+
 function url($route, $params = null, $echo = true)
 {
 	global $ROOT_DIR;
