@@ -3,7 +3,7 @@ class Model
 {
 	public static function all()
 	{
-		$class = get_called_class();
+		$class = strtolower(get_called_class());
 		$statement = "select * from $class";
 		$statement = db()->query($statement);
 
@@ -19,7 +19,7 @@ class Model
 
 	public static function load($id)
 	{
-		$class = get_called_class();
+		$class = strtolower(get_called_class());
 		$id_key = strtolower($class)."_id";
 		$statement = "select * from $class where $id_key = :id";
 		$statement = db()->prepare($statement);
@@ -32,7 +32,7 @@ class Model
 
 	public function create()
 	{
-		$class = get_called_class();
+		$class = strtolower(get_called_class());
 		$attributes = get_object_vars($this);
 		$id_key = strtolower($class)."_id";
 
@@ -49,7 +49,7 @@ class Model
 
 	public function save()
 	{
-		$class = get_called_class();
+		$class = strtolower(get_called_class());
 		$id_key = strtolower($class)."_id";
 
 		$statement = "select * from $class where $id_key = ?";
@@ -70,7 +70,7 @@ class Model
 
 	public function update()
 	{
-		$class = get_called_class();
+		$class = strtolower(get_called_class());
 		$attributes = get_object_vars($this);
 		$id_key = strtolower($class)."_id";
 
@@ -92,7 +92,7 @@ class Model
 
 	public function delete()
 	{
-		$class = get_called_class();
+		$class = strtolower(get_called_class());
 		$id_key = strtolower($class)."_id";
 
 		$statement = "delete from $class where $id_key = ?";
@@ -104,7 +104,7 @@ class Model
 
 	public static function destroy($id)
 	{
-		$class = get_called_class();
+		$class = strtolower(get_called_class());
 		$id_key = strtolower($class)."_id";
 
 		$statement = "delete from $class where $id_key = ?";
@@ -123,7 +123,7 @@ class Model
 
 	public static function exists($id)
     {
-		$class = get_called_class();
+		$class = strtolower(get_called_class());
 		$id_key = strtolower($class) . "_id";
         $statement = "select '' from $class where $id_key = :id";
         $statement = db()->prepare($statement);
