@@ -11,6 +11,8 @@ spl_autoload_register(function($class)
 	}
 });
 
+$ROOT_DIR = __DIR__;
+
 $host = 'localhost';
 $db   = 'legitdb';
 $user = 'root';
@@ -50,11 +52,12 @@ function view($view, $vars_array = null)
 
 function url($route, $params = null, $echo = true)
 {
+	global $ROOT_DIR;
 	if($echo)
 	{
 		if($params == null)
 		{
-			echo "./?route=$route";
+			echo $ROOT_DIR . "/?route=$route";
 		}
 		else
 		{
@@ -62,14 +65,14 @@ function url($route, $params = null, $echo = true)
 			foreach ($params as $param_key => $value) {
 				$param_str .= "&$param_key=$value";
 			}
-			echo "./?route=$route" . $param_str;
+			echo $ROOT_DIR ."/?route=$route" . $param_str;
 		}
 	}
 	else
 	{
 		if($params == null)
 		{
-			return "./?route=$route";
+			return $ROOT_DIR ."/?route=$route";
 		}
 		else
 		{
@@ -77,7 +80,7 @@ function url($route, $params = null, $echo = true)
 			foreach ($params as $param_key => $value) {
 				$param_str .= "&$param_key=$value";
 			}
-			return "./?route=$route" . $param_str;
+			return $ROOT_DIR . "/?route=$route" . $param_str;
 		}
 	}
 	
