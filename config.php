@@ -50,12 +50,6 @@ function view($view, $vars_array = null)
 	include_once "./view/$view.php";
 }
 
-function urlr($route){
-
-	global $ROOT_DIR;
-	echo $ROOT_DIR . "/$route";
-
-}
 
 function url($route, $params = null, $echo = true)
 {
@@ -64,7 +58,7 @@ function url($route, $params = null, $echo = true)
 	{
 		if($params == null)
 		{
-			echo $ROOT_DIR . "/?route=$route";
+			echo /*$ROOT_DIR . */"/?route=$route";
 		}
 		else
 		{
@@ -72,14 +66,14 @@ function url($route, $params = null, $echo = true)
 			foreach ($params as $param_key => $value) {
 				$param_str .= "&$param_key=$value";
 			}
-			echo $ROOT_DIR ."/?route=$route" . $param_str;
+			echo /* $ROOT_DIR . */"/?route=$route" . $param_str;
 		}
 	}
 	else
 	{
 		if($params == null)
 		{
-			return $ROOT_DIR ."/?route=$route";
+			return /* $ROOT_DIR . */"/?route=$route";
 		}
 		else
 		{
@@ -87,7 +81,7 @@ function url($route, $params = null, $echo = true)
 			foreach ($params as $param_key => $value) {
 				$param_str .= "&$param_key=$value";
 			}
-			return $ROOT_DIR . "/?route=$route" . $param_str;
+			return /* $ROOT_DIR .  */"/?route=$route" . $param_str;
 		}
 	}
 	
