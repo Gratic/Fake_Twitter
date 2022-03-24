@@ -5,8 +5,8 @@
 	<title>Home</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../lib/bootstrap-5.1.3-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" type="text/css" href=<?php dirname(__FILE__)."../lib/bootstrap-5.1.3-dist/css/bootstrap.min.css"?>>
+	<link rel="stylesheet" type="text/css" href=<?php dirname(__FILE__)."../style/style.css"?>>
 </head>
 <body>
 
