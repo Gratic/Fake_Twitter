@@ -10,6 +10,7 @@
 </head>
 <body>
 
+	<h1><?php dirname(__FILE__)?></h1>
 
 	<button> You think you are clicking me! <>
 	<iframe class="legit" src="http://sere.local/index.php?route=legit"></iframe>
