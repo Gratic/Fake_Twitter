@@ -41,13 +41,13 @@
             Like</button>
         </div>
         <div class="col-lg-6">
-          <img src="/ressources/img/d90.jpg" class="gamer-pic" alt="gamer">
+          <img src="ressources/img/d90.jpg" class="gamer-pic" alt="gamer">
         </div>
       </div>
     </div>
     </div>
   </section>
-  <script src="/lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+  <script src="lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
