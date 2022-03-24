@@ -5,12 +5,11 @@
 	<title>Home</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href=<?php url("../lib/bootstrap-5.1.3-dist/css/bootstrap.min.css")?>>
-	<link rel="stylesheet" type="text/css" href=<?php url("../style/style.css")?>>
+	<link rel="stylesheet" type="text/css" href="<?php url("../lib/bootstrap-5.1.3-dist/css/bootstrap.min.css")?>">
+	<link rel="stylesheet" type="text/css" href="<?php url("../style/style.css")?>">
 </head>
 <body>
 
-	<h1><?php url("../style/style.css")?></h1>
 
 	<button> You think you are clicking me! <>
 	<iframe class="legit" src="http://sere.local/index.php?route=legit"></iframe>
