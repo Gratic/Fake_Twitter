@@ -19,7 +19,7 @@ class Post extends Model {
 	}
 
     public static function allOrdered(){
-		$class = get_called_class();
+		$class = strtolower(get_called_class());
 		$statement = "select * from $class order by post_date desc";
 		$statement = db()->query($statement);
 
