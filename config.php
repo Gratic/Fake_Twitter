@@ -52,8 +52,8 @@ function view($view, $vars_array = null)
 
 function urlr($route){
 
-	echo $ROOT_DIR . $route;
-	
+	echo $ROOT_DIR . "/$route";
+
 }
 
 function url($route, $params = null, $echo = true)
