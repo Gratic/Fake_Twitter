@@ -1,7 +1,16 @@
+.legit{
+    width: 1000px;
+    height: 500px;
+    z-index:2;
+    opacity: 0.00001;
+    border: none;
+}
 
 button{
-    background-color:yellow;
-    color: red;
-    justify-content: center;
-    align-items: center;
+    background-color:black;
+    color:white;
+    z-index: 2;
+    top: 455px;
+    left: 308px;
+    position: absolute;
 }

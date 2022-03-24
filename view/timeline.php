@@ -6,7 +6,6 @@
     <title>Timeline</title>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="lib/bootstrap-icons-1.8.1/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body class="min-vh-100 bg-dark">
