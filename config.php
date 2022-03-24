@@ -58,7 +58,7 @@ function url($route, $params = null, $echo = true)
 	{
 		if($params == null)
 		{
-			echo /*$ROOT_DIR . */"/?route=$route";
+			echo /*$ROOT_DIR . */"?route=$route";
 		}
 		else
 		{
@@ -66,14 +66,14 @@ function url($route, $params = null, $echo = true)
 			foreach ($params as $param_key => $value) {
 				$param_str .= "&$param_key=$value";
 			}
-			echo /* $ROOT_DIR . */"/?route=$route" . $param_str;
+			echo /* $ROOT_DIR . */"?route=$route" . $param_str;
 		}
 	}
 	else
 	{
 		if($params == null)
 		{
-			return /* $ROOT_DIR . */"/?route=$route";
+			return /* $ROOT_DIR . */"?route=$route";
 		}
 		else
 		{
@@ -81,7 +81,7 @@ function url($route, $params = null, $echo = true)
 			foreach ($params as $param_key => $value) {
 				$param_str .= "&$param_key=$value";
 			}
-			return /* $ROOT_DIR .  */"/?route=$route" . $param_str;
+			return /* $ROOT_DIR .  */"?route=$route" . $param_str;
 		}
 	}
 	
