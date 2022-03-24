@@ -6,10 +6,10 @@
     border: none;
 }
 
-button{
+.button{
     background-color:black;
     color:white;
-    z-index: 2;
+    z-index: 0;
     top: 455px;
     left: 308px;
     position: absolute;
