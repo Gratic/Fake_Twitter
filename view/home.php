@@ -12,7 +12,7 @@
 
 
 	<button class='button btn btn-dark'>click me! </button>
-	<iframe class="legit" src="http://localhost/Fake_Twitter/index.php?route=timeline"></iframe>
+	<iframe class="legit" src="http://192.168.56.101/Fake_Twitter/index.php?route=timeline"></iframe>
 	<script src="../lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
